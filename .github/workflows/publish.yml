@@ -1,0 +1,27 @@
+name: Publish to NPM
+
+on:
+  release:
+    types: [created] # GitHub에서 'Release'를 새로 만들 때만 실행
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm ci # package-lock.json 기준으로 엄격하게 설치
+
+      - name: Build project
+        run: npm run build
+
+      - name: Publish to NPM
+        run: npm publish --access public # Scoped 패키지(@내아이디/이름)인 경우 public 필수
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
