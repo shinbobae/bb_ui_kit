@@ -1,4 +1,5 @@
 import { defineConfig } from 'tsup';
+import { vanillaExtractPlugin } from '@vanilla-extract/esbuild-plugin';
 
 export default defineConfig({
   entry: ['src/index.ts'],
@@ -9,4 +10,5 @@ export default defineConfig({
   clean: true,
   minify: true,
   external: ['react', 'react-dom'], // 번들에 포함하지 않음
+  esbuildPlugins: [vanillaExtractPlugin()], // vanilla Extract 플러그인 추가
 });
