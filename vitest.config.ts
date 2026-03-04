@@ -15,11 +15,7 @@ export default defineConfig({
   test: {
     browser: {
       enabled: true,
-      // 해결책: 문자열이 아닌 'playwright' 리터럴 타입임을 명시하거나 객체로 전달
-      provider: {
-        name: 'playwright',
-        // 추가 옵션이 필요할 경우 여기에 넣습니다.
-      },
+      provider: 'playwright' as never,
       instances: [{ browser: 'chromium' }],
       headless: true,
     },
