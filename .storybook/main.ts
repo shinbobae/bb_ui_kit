@@ -1,6 +1,7 @@
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import type { StorybookConfig } from '@storybook/react-vite';
 import { mergeConfig } from 'vite';
+import path from 'path';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -18,6 +19,11 @@ const config: StorybookConfig = {
   async viteFinal(config) {
     return mergeConfig(config, {
       plugins: [vanillaExtractPlugin()],
+      resolve: {
+        alias: {
+          '@': path.resolve(__dirname, '../src'),
+        },
+      },
       optimizeDeps: {
         // React 관련 모듈들을 미리 번들링하도록 강제합니다.
         include: [
