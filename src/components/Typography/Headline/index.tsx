@@ -11,12 +11,12 @@ type HeadlineType = {
 } & React.ClassAttributes<HTMLHeadingElement> &
   React.HTMLAttributes<HTMLHeadingElement>;
 
-const Headline = ({ level = 6, color, children }: HeadlineType) => {
+const Headline = ({ level = 6, color = black900, children }: HeadlineType) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   return (
     <Tag
       className={headlineRecipe({ level })}
-      style={assignInlineVars({ [brandColorVar]: color ?? black900 })}
+      style={assignInlineVars({ [brandColorVar]: color })}
     >
       {children}
     </Tag>
