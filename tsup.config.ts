@@ -2,7 +2,7 @@ import { defineConfig } from 'tsup';
 import { vanillaExtractPlugin } from '@vanilla-extract/esbuild-plugin';
 
 export default defineConfig({
-  entry: ['src/index.ts'],
+  entry: ['src/**/!(*.stories|*.mdx).{ts,tsx}'],
   format: ['cjs', 'esm'], // SSR(CJS)와 CSR(ESM) 모두 대응
   dts: true, // 타입 정의 파일 생성
   splitting: false,
