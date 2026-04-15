@@ -21,36 +21,40 @@ export const blue500 = '#3370EC';
 export const blue600 = '#3370EC';
 export const blue700 = '#3163C9';
 
-export const green50 = '#EEF7F0 ';
-export const green100 = '#DDEFE2';
-export const green200 = '#AAD6B7';
-export const green300 = '#AAD6B7';
-export const green400 = '#56AE70';
-export const green500 = '#56AE70';
+export const green50 = '#EEF7F0';
+export const green100 = '#D8EDDE';
+export const green200 = '#C3E2CB';
+export const green300 = '#ADD8B9';
+export const green400 = '#97CDA7';
+export const green500 = '#81C395';
+export const green600 = '#6CB882';
 export const green700 = '#56AE70';
 
 export const red50 = '#FBEDEE';
-export const red100 = '#F8DCDD';
-export const red200 = '#EEA8AB';
-export const red300 = '#EEA8AB';
-export const red400 = '#DD5257';
-export const red500 = '#DD5257';
+export const red100 = '#F6D3D5';
+export const red200 = '#F1B9BC';
+export const red300 = '#ECA0A3';
+export const red400 = '#E78689';
+export const red500 = '#E26C70';
+export const red600 = '#DD5257';
 export const red700 = '#B94B52';
 
 export const mandarin50 = '#FCF3EA';
-export const mandarin100 = '#FAE7D6';
-export const mandarin200 = '#F3C298';
-export const mandarin300 = '#F3C298';
-export const mandarin400 = '#E88532';
-export const mandarin500 = '#E88532';
+export const mandarin100 = '#F9E1CB';
+export const mandarin200 = '#F5CEAD';
+export const mandarin300 = '#F2BC8E';
+export const mandarin400 = '#EFAA6F';
+export const mandarin500 = '#EB9751';
+export const mandarin600 = '#E88532';
 export const mandarin700 = '#C27434';
 
 export const yellow50 = '#FEF9EF';
-export const yellow100 = '#FDF4E0';
-export const yellow200 = '#FBE4B1';
-export const yellow300 = '#FBE4B1';
-export const yellow400 = '#F7C964';
-export const yellow500 = '#F7C964';
+export const yellow100 = '#FDF1D8';
+export const yellow200 = '#FCE9C1';
+export const yellow300 = '#FBE1AA';
+export const yellow400 = '#F9D992';
+export const yellow500 = '#F8D17B';
+export const yellow600 = '#F7C964';
 export const yellow700 = '#CEAB5C';
 
 export const colors = {
@@ -87,6 +91,7 @@ export const colors = {
     300: green300,
     400: green400,
     500: green500,
+    600: green600,
     700: green700,
   },
   red: {
@@ -96,6 +101,7 @@ export const colors = {
     300: red300,
     400: red400,
     500: red500,
+    600: red600,
     700: red700,
   },
   mandarin: {
@@ -105,6 +111,7 @@ export const colors = {
     300: mandarin300,
     400: mandarin400,
     500: mandarin500,
+    600: mandarin600,
     700: mandarin700,
   },
   yellow: {
@@ -114,6 +121,7 @@ export const colors = {
     300: yellow300,
     400: yellow400,
     500: yellow500,
+    600: yellow600,
     700: yellow700,
   },
 } as const;

@@ -5,7 +5,7 @@ import { black900 } from '@/tokens/colors.ts';
 
 export type HeadlineLevelType = 1 | 2 | 3 | 4 | 5 | 6;
 type HeadlineType = {
-  level: HeadlineLevelType;
+  level?: HeadlineLevelType;
   color?: string;
   children: ReactNode;
 } & React.ClassAttributes<HTMLHeadingElement> &

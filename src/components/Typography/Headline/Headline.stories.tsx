@@ -8,11 +8,8 @@ const meta: Meta<typeof Headline> = {
   tags: ['autodocs'], // 스토리북 8에서 문서화 자동 생성
   argTypes: {
     level: {
-      control: { type: 'select' },
+      control: { type: 'radio' },
       options: [1, 2, 3, 4, 5, 6],
-    },
-    color: {
-      control: 'color',
     },
   },
 };

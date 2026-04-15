@@ -8,7 +8,7 @@ import { assignInlineVars } from '@vanilla-extract/dynamic';
 
 export type SubTitleLevelType = 1 | 2 | 3 | 4;
 type SubTitleType = {
-  level: SubTitleLevelType;
+  level?: SubTitleLevelType;
   color?: string;
   children: ReactNode;
 } & React.ClassAttributes<HTMLParagraphElement> &

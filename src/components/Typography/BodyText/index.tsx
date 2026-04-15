@@ -6,9 +6,9 @@ import {
 } from '@/components/Typography/BodyText/style.css.ts';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 
-export type BodyTextLevelType = 1 | 2 | 3;
+export type BodyTextLevelType = 1 | 2 | 3 | 4;
 type BodyTextType = {
-  level: BodyTextLevelType;
+  level?: BodyTextLevelType;
   color?: string;
   children: ReactNode;
   align?: 'left' | 'center' | 'right';
@@ -16,7 +16,7 @@ type BodyTextType = {
   React.HTMLAttributes<HTMLParagraphElement>;
 
 const BodyText = ({
-  level,
+  level = 1,
   color = black900,
   align,
   children,

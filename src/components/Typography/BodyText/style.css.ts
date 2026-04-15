@@ -5,7 +5,7 @@ export const brandColorVar = createVar();
 export const subTitleRecipe = recipe({
   // 공통
   base: {
-    fontWeight: 500,
+    fontWeight: 400,
     lineHeight: '150%',
     color: brandColorVar,
     wordBreak: 'break-word',
@@ -15,6 +15,7 @@ export const subTitleRecipe = recipe({
       1: { fontSize: '16px' },
       2: { fontSize: '15px' },
       3: { fontSize: '14px' },
+      4: { fontSize: '13px' },
     },
     align: {
       left: { textAlign: 'left' },
