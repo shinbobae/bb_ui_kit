@@ -1,5 +1,5 @@
-import type { Preview } from '@storybook/react-vite';
 import '../src/style/theme.css.ts';
+import { Preview } from '@storybook/react';
 
 const preview: Preview = {
   parameters: {
@@ -7,6 +7,12 @@ const preview: Preview = {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
+      },
+    },
+    options: {
+      // Introduction 섹션을 가장 먼저 보여주도록 설정
+      storySort: {
+        order: ['Intro', 'Components', '*'],
       },
     },
   },
