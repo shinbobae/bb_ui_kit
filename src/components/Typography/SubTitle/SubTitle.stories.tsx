@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import SubTitle from '@/components/Typography/SubTitle/index.tsx';
 import { black900 } from '@/tokens/colors.ts';
 const meta: Meta<typeof SubTitle> = {
-  title: 'Components/SubTitle',
+  title: 'Components/Typography/SubTitle',
   component: SubTitle,
   tags: ['autodocs'],
 };

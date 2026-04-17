@@ -3,7 +3,7 @@ import Headline from '@/components/Typography/Headline/index.tsx';
 import { black900, blue700 } from '@/tokens/colors.ts';
 
 const meta: Meta<typeof Headline> = {
-  title: 'Components/Headline',
+  title: 'Components/Typography/Headline',
   component: Headline,
   tags: ['autodocs'], // 스토리북 8에서 문서화 자동 생성
   argTypes: {

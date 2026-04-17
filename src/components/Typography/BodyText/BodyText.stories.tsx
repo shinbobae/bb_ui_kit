@@ -3,7 +3,7 @@ import { black900, blue700 } from '@/tokens/colors.ts';
 import BodyText from '@/components/Typography/BodyText/index.tsx';
 
 const meta: Meta<typeof BodyText> = {
-  title: 'Components/BodyText',
+  title: 'Components/Typography/BodyText',
   component: BodyText,
   tags: ['autodocs'], // 스토리북 8에서 문서화 자동 생성
 };
