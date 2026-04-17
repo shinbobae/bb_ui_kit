@@ -26,6 +26,11 @@
     },
     "./dist/index.css": "./dist/index.css"
   },
+  "sideEffects": [
+    "**/*.css",
+    "**/*.css.ts",
+    "dist/index.css"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
