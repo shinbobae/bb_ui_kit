@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Flex from './index.tsx';
 import Badge from '@/components/Badge';
+import Divider from '@/components/Layout/Divider';
+import SubTitle from '@/components/Typography/SubTitle';
+import BodyText from '@/components/Typography/BodyText';
 
 const meta: Meta<typeof Flex> = {
   title: 'Components/Layout/Flex',
@@ -90,21 +93,42 @@ export const Center: Story = {
 // 4. 시맨틱 태그 활용 (Polymorphic)
 export const ListExample: Story = {
   render: (args) => (
-    <Flex {...args} as="ul">
-      <Flex as="li" style={{ listStyle: 'none' }}>
-        <Badge variant="light" color="gray">
-          List Item 1
-        </Badge>
+    <Flex {...args}>
+      <Flex as="li" fullWidth justify="space-between">
+        <Flex gap={8}>
+          <Badge variant="light" color="red">
+            모두 이걸 보세요
+          </Badge>
+          <SubTitle>위에 고정 공지 목록 하면 이런거 많이 쓰니까</SubTitle>
+        </Flex>
+        <BodyText level={3}>2026.04.17</BodyText>
       </Flex>
-      <Flex as="li" style={{ listStyle: 'none' }}>
-        <Badge variant="light" color="gray">
-          List Item 2
-        </Badge>
+      <Divider />
+      <Flex as="li" fullWidth justify="space-between">
+        <Flex gap={8}>
+          <Badge variant="light" color="gray">
+            원피스
+          </Badge>
+          <SubTitle>내 어린 시절 우연히 들었던 믿지 못할 한 마디</SubTitle>
+        </Flex>
+        <BodyText level={3}>2026.04.17</BodyText>
       </Flex>
+      <Divider />
+      <Flex as="li" fullWidth justify="space-between">
+        <Flex gap={8}>
+          <Badge variant="light" color="gray">
+            꼬마버스 타요
+          </Badge>
+          <SubTitle>타요타요 타요타요 개구쟁이 꼬마버스</SubTitle>
+        </Flex>
+        <BodyText level={3}>2026.04.17</BodyText>
+      </Flex>
+      <Divider />
     </Flex>
   ),
   args: {
+    as: 'ul',
     direction: 'column',
-    gap: 10,
+    gap: 12,
   },
 };
