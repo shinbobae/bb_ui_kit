@@ -7,3 +7,4 @@ export { default as SubTitle } from './components/Typography/SubTitle';
 export { default as BodyText } from './components/Typography/BodyText';
 export { default as Badge } from './components/Badge';
 export { default as Flex } from './components/Layout/Flex';
+export { default as Divider } from './components/Layout/Divider';
