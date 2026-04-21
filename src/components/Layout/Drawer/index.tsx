@@ -133,3 +133,5 @@ export const Drawer = Object.assign(DrawerMain, {
   Header: DrawerHeader,
   Body: DrawerBody,
 });
+
+export default Drawer;
