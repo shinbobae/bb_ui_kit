@@ -2,8 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Flex from './index.tsx';
 import Badge from '@/components/Badge';
 import Divider from '@/components/Layout/Divider';
-import SubTitle from '@/components/Typography/SubTitle';
-import BodyText from '@/components/Typography/BodyText';
+import Typography from '@/components/Typography';
 
 const meta: Meta<typeof Flex> = {
   title: 'Components/Layout/Flex',
@@ -99,9 +98,11 @@ export const ListExample: Story = {
           <Badge variant="light" color="red">
             모두 이걸 보세요
           </Badge>
-          <SubTitle>위에 고정 공지 목록 하면 이런거 많이 쓰니까</SubTitle>
+          <Typography level={5}>
+            위에 고정 공지 목록 하면 이런거 많이 쓰니까
+          </Typography>
         </Flex>
-        <BodyText level={3}>2026.04.17</BodyText>
+        <Typography level={6}>2026.04.17</Typography>
       </Flex>
       <Divider />
       <Flex as="li" fullWidth justify="space-between">
@@ -109,9 +110,11 @@ export const ListExample: Story = {
           <Badge variant="light" color="gray">
             원피스
           </Badge>
-          <SubTitle>내 어린 시절 우연히 들었던 믿지 못할 한 마디</SubTitle>
+          <Typography level={5}>
+            내 어린 시절 우연히 들었던 믿지 못할 한 마디
+          </Typography>
         </Flex>
-        <BodyText level={3}>2026.04.17</BodyText>
+        <Typography level={6}>2026.04.17</Typography>
       </Flex>
       <Divider />
       <Flex as="li" fullWidth justify="space-between">
@@ -119,9 +122,9 @@ export const ListExample: Story = {
           <Badge variant="light" color="gray">
             꼬마버스 타요
           </Badge>
-          <SubTitle>타요타요 타요타요 개구쟁이 꼬마버스</SubTitle>
+          <Typography level={5}>타요타요 타요타요 개구쟁이 꼬마버스</Typography>
         </Flex>
-        <BodyText level={3}>2026.04.17</BodyText>
+        <Typography level={6}>2026.04.17</Typography>
       </Flex>
       <Divider />
     </Flex>
