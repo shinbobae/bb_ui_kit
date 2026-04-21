@@ -20,6 +20,7 @@ const meta: Meta<typeof Typography> = {
     align: {
       control: { type: 'radio' },
       options: ['left', 'center', 'right'],
+      description: 'inline 태그라도 align 적용되면 block 태그처럼 작동됩니다.',
     },
     color: {
       control: { type: 'color' },

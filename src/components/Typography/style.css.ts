@@ -20,8 +20,8 @@ export const subTitleRecipe = recipe({
     },
     align: {
       left: { textAlign: 'left' },
-      center: { textAlign: 'center' },
-      right: { textAlign: 'right' },
+      center: { textAlign: 'center', display: 'block', width: '100%' },
+      right: { textAlign: 'right', display: 'block', width: '100%' },
     },
   },
   defaultVariants: {

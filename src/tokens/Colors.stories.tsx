@@ -1,6 +1,8 @@
 import { colors } from './colors';
 import { vars } from '../style/theme.css'; // vars 가져오기
 import * as styles from '../../.storybook/ColorPalette.css';
+import { Flex } from '@/index.tsx';
+import Typography from '@/components/Typography';
 
 export default {
   title: 'Design System/Colors', // Storybook 사이드바의 경로
@@ -21,10 +23,8 @@ export const RawPalette = () => (
     <h1>Raw Color Palette</h1>
     {Object.entries(colors).map(([group, value]) => (
       <div key={group} style={{ marginBottom: '40px' }}>
-        <h2 style={{ borderBottom: '1px solid #ddd', paddingBottom: '8px' }}>
-          {group.toUpperCase()}
-        </h2>
-        <div className={styles.grid}>
+        <Typography level={3}>{group.toUpperCase()}</Typography>
+        <Flex>
           {typeof value === 'string' ? (
             <ColorItem name={group} value={value} />
           ) : (
@@ -32,7 +32,7 @@ export const RawPalette = () => (
               <ColorItem key={shade} name={`${group}-${shade}`} value={hex} />
             ))
           )}
-        </div>
+        </Flex>
       </div>
     ))}
   </div>
