@@ -13,8 +13,8 @@ export const subTitleRecipe = recipe({
     level: {
       1: { fontSize: '2.5rem', fontWeight: 800, lineHeight: 1.2 }, // h1 급
       2: { fontSize: '2rem', fontWeight: 700, lineHeight: 1.3 }, // h2 급
-      3: { fontSize: '1.5rem', fontWeight: 700, lineHeight: 1.4 }, // h3 급
-      4: { fontSize: '1.125rem', fontWeight: 600, lineHeight: 1.5 }, // Body Large / h4
+      3: { fontSize: '1.5rem', fontWeight: 600, lineHeight: 1.4 }, // h3 급
+      4: { fontSize: '1.125rem', fontWeight: 500, lineHeight: 1.5 }, // Body Large / h4
       5: { fontSize: '1rem', fontWeight: 400, lineHeight: 1.6 }, // Body Medium / h5
       6: { fontSize: '0.875rem', fontWeight: 400, lineHeight: 1.6 }, // Body Small / h6
     },

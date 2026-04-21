@@ -2,29 +2,29 @@ import { recipe } from '@vanilla-extract/recipes';
 import {
   black0,
   black300,
-  black600,
+  black500,
   black900,
   blue100,
-  blue600,
+  blue500,
   green100,
-  green600,
+  green500,
   mandarin100,
-  mandarin600,
+  mandarin500,
   red100,
-  red600,
+  red500,
   yellow100,
-  yellow600,
+  yellow500,
 } from '@/tokens/colors.ts';
 import { TagColorType } from '@/components/Badge/index.tsx';
 
 const colorThemes: Record<TagColorType, { main: string; light: string }> = {
-  blue: { main: blue600, light: blue100 },
-  green: { main: green600, light: green100 },
-  mandarin: { main: mandarin600, light: mandarin100 },
-  red: { main: red600, light: red100 },
-  yellow: { main: yellow600, light: yellow100 },
+  blue: { main: blue500, light: blue100 },
+  green: { main: green500, light: green100 },
+  mandarin: { main: mandarin500, light: mandarin100 },
+  red: { main: red500, light: red100 },
+  yellow: { main: yellow500, light: yellow100 },
   black: { main: black900, light: black300 },
-  gray: { main: black600, light: blue100 },
+  gray: { main: black500, light: blue100 },
 };
 
 const createColorVariants = (colorName: TagColorType) => {
