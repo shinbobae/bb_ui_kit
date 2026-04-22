@@ -7,3 +7,4 @@ export { default as Badge } from './components/Badge';
 export { default as Flex } from './components/Layout/Flex';
 export { default as Divider } from './components/Layout/Divider';
 export { default as Drawer } from './components/Layout/Drawer';
+export { default as Button } from './components/Button';
