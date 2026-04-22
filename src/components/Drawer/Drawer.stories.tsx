@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 import { Badge, Divider, Flex } from '@/index.tsx';
-import { Drawer } from '@/components/Layout/Drawer/index.tsx';
+import { Drawer } from '@/components/Drawer/index.tsx';
 
 const meta: Meta<typeof Drawer> = {
   title: 'Components/Feedback/Drawer',
