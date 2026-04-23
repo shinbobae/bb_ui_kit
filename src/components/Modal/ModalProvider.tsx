@@ -3,7 +3,7 @@ import { Alert, Confirm } from '@/components/Modal/index.tsx';
 
 type ModalStatus = 'default' | 'danger' | 'success';
 
-interface ModalConfig {
+export interface ModalConfig {
   title?: string;
   message: string;
   status?: ModalStatus;
@@ -12,13 +12,13 @@ interface ModalConfig {
 }
 
 // 1. 모달의 상태 타입을 정의합니다.
-interface ModalState {
+export interface ModalState {
   type: 'alert' | 'confirm' | null;
   config: ModalConfig | null;
   resolve: (value: boolean) => void; // Alert는 void지만 Confirm과 맞추기 위해 boolean으로 통합하거나 분리 가능
 }
 
-interface ModalContextType {
+export interface ModalContextType {
   openAlert: (config: ModalConfig) => Promise<void>;
   openConfirm: (config: ModalConfig) => Promise<boolean>;
 }
