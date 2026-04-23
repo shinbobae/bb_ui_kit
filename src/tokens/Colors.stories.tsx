@@ -1,7 +1,7 @@
 import { colors } from './colors';
 import { vars } from '../style/theme.css'; // vars 가져오기
 import * as styles from '../../.storybook/ColorPalette.css';
-import { Flex } from '@/index.tsx';
+import { Flex } from '@/index.ts';
 import Typography from '@/components/Typography';
 
 export default {

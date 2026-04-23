@@ -1,13 +1,13 @@
 {
   "name": "bb_ui_kit_v2026",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build": "tsup src/index.tsx --format cjs,esm --dts --clean"
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
   },
   "repository": {
     "type": "git",
