@@ -23,7 +23,7 @@ export const modalContainer = recipe({
     padding: '24px',
     width: '90%',
     minWidth: '320px',
-    maxWidth: '440px',
+    maxWidth: '360px',
     boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
     display: 'flex',
     flexDirection: 'column',

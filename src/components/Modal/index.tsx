@@ -69,7 +69,7 @@ export const Alert = ({
 }: ContentProps) => {
   return (
     <Modal isOpen onClose={onClose} status={status}>
-      <Flex direction="column" gap={8}>
+      <Flex direction="column" gap={12}>
         {title && (
           <Typography level={3} weight="bold">
             {title}
@@ -81,6 +81,8 @@ export const Alert = ({
       </Flex>
       <div className={s.modalFooter}>
         <Button
+          fullWidth
+          size="lg"
           onClick={onClose}
           color={status === 'default' ? 'primary' : status}
         >
@@ -109,7 +111,7 @@ export const Confirm = ({
 }: ConfirmProps) => {
   return (
     <Modal isOpen onClose={onClose} status={status}>
-      <Flex direction="column" gap={8}>
+      <Flex direction="column" gap={12}>
         {title && (
           <Typography level={3} weight="bold">
             {title}
@@ -120,10 +122,18 @@ export const Confirm = ({
         </Typography>
       </Flex>
       <div className={s.modalFooter}>
-        <Button variant="ghost" color="gray" onClick={onClose}>
+        <Button
+          fullWidth
+          size="lg"
+          color="gray"
+          variant="ghost"
+          onClick={onClose}
+        >
           {cancelText}
         </Button>
         <Button
+          fullWidth
+          size="lg"
           onClick={() => {
             onConfirm();
             onClose();

@@ -2,6 +2,7 @@ import { recipe } from '@vanilla-extract/recipes';
 import {
   black0,
   black100,
+  black300,
   black400,
   black50,
   black500,
@@ -49,9 +50,9 @@ const colors = {
     text: black0,
   },
   gray: {
-    base: black500,
-    hover: black400,
-    active: black600,
+    base: black400,
+    hover: black300,
+    active: black500,
     hoverLight: black50,
     activeLight: black100,
     text: black0,
@@ -190,8 +191,8 @@ export const buttonRecipe = recipe({
     {
       variants: { color: 'gray', variant: 'outline' },
       style: {
-        color: colors.gray.base,
-        borderColor: colors.gray.base,
+        color: black600,
+        borderColor: black600,
         ':hover': { backgroundColor: colors.gray.hoverLight },
         ':active': { backgroundColor: colors.gray.activeLight },
       },
@@ -199,7 +200,7 @@ export const buttonRecipe = recipe({
     {
       variants: { color: 'gray', variant: 'ghost' },
       style: {
-        color: colors.gray.base,
+        color: black600,
         borderColor: 'transparent',
         ':hover': { backgroundColor: colors.gray.hoverLight },
         ':active': { backgroundColor: colors.gray.activeLight },
