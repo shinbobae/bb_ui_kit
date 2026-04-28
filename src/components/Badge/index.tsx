@@ -30,7 +30,7 @@ type BadgeProps = BaseBadgeProps &
   );
 
 const Badge = (props: BadgeProps) => {
-  // 기본값 설정 (props 전체를 참조하여 관계를 유지함)
+  // 기본값 설정
   const { variant = 'filled', size = 'sm', color = 'blue' } = props;
 
   if (variant === 'dot') {
@@ -38,13 +38,12 @@ const Badge = (props: BadgeProps) => {
       <span
         className={badgeRecipe({ size, variant, color })}
         role="status"
-        // props.children으로 접근하면 TS가 string임을 확실히 압니다.
+        // props.children으로 접근하면 string임을 확신
         aria-label={props.children as string}
       />
     );
   }
 
-  // 여기서 variant는 자동으로 dot이 아닌 타입으로 좁혀집니다.
   return (
     <span className={badgeRecipe({ size, variant, color })}>
       {props.children}

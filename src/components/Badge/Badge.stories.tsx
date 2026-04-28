@@ -70,4 +70,13 @@ export const Dot: Story = {
     variant: 'dot',
     children: '이것은!', // dot일 때는 string만 허용됨
   },
+  render: (args) => (
+    <Flex gap={16}>
+      <Badge {...args} color="blue" />
+      <Badge {...args} color="green" />
+      <Badge {...args} color="red" />
+      <Badge {...args} color="mandarin" />
+      <Badge {...args} color="yellow" />
+    </Flex>
+  ),
 };
