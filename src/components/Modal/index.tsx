@@ -71,11 +71,11 @@ export const Alert = ({
     <Modal isOpen onClose={onClose} status={status}>
       <Flex direction="column" gap={12}>
         {title && (
-          <Typography level={3} weight="bold">
+          <Typography level={4} weight={600} align="center">
             {title}
           </Typography>
         )}
-        <Typography level={5} align="left">
+        <Typography level={5} align="center">
           {message}
         </Typography>
       </Flex>
@@ -113,11 +113,11 @@ export const Confirm = ({
     <Modal isOpen onClose={onClose} status={status}>
       <Flex direction="column" gap={12}>
         {title && (
-          <Typography level={3} weight="bold">
+          <Typography level={4} weight={600} align="center">
             {title}
           </Typography>
         )}
-        <Typography level={5} align="left">
+        <Typography level={5} align="center">
           {message}
         </Typography>
       </Flex>

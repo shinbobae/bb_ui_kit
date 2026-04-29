@@ -6,6 +6,7 @@ import Button from '@/components/Button';
 import { useState } from 'react';
 import Typography from '@/components/Typography';
 import Badge from '@/components/Badge';
+import { modal } from '@/components/Modal/ModalProvider.tsx';
 
 const meta: Meta<typeof Alert> = {
   title: 'Components/Modal',
@@ -194,6 +195,48 @@ export const StateModal = {
           </Flex>
         </Modal>
         {/* 큰너비 */}
+      </Flex>
+    );
+  },
+};
+
+export const ExternalFunction = {
+  render: () => {
+    const handleExternalAlert = async () => {
+      await modal.alert({
+        title: '외부 호출',
+        message: 'async await 이에요',
+        status: 'success',
+      });
+      console.log('외부 알림 닫힘');
+    };
+
+    const handleExternalConfirm = async () => {
+      const result = await modal.confirm({
+        title: '외부 컨펌',
+        message: 'async await 이에요',
+        confirmText: 'confirm',
+        cancelText: 'cancel',
+      });
+
+      if (result) {
+        await modal.alert({ message: '진행을 선택하셨습니다.' });
+      }
+    };
+
+    return (
+      <Flex gap={12} padding="2rem" direction="column" align="flex-start">
+        <Typography level={5} weight={700} color="gray">
+          리액트 외부(.ts) 로직 테스트 (훅 미사용)
+        </Typography>
+        <Flex gap={12}>
+          <Button variant="outline" onClick={handleExternalAlert}>
+            Alert
+          </Button>
+          <Button variant="outline" onClick={handleExternalConfirm}>
+            Confirm
+          </Button>
+        </Flex>
       </Flex>
     );
   },

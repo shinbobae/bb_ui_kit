@@ -1,5 +1,10 @@
-import React, { createContext, useState, useCallback } from 'react';
+import React, { createContext, useState, useCallback, useEffect } from 'react';
 import { Alert, Confirm } from '@/components/Modal/index.tsx';
+
+export const modal = {
+  alert: (_config: ModalConfig) => Promise.resolve() as Promise<void>,
+  confirm: (_config: ModalConfig) => Promise.resolve(false) as Promise<boolean>,
+};
 
 type ModalStatus = 'default' | 'danger' | 'success';
 
@@ -53,6 +58,11 @@ export const ModalProvider = ({ children }: { children: React.ReactNode }) => {
       });
     });
   }, []);
+
+  useEffect(() => {
+    modal.alert = openAlert;
+    modal.confirm = openConfirm;
+  }, [openAlert, openConfirm]);
 
   const closeBox = (result: boolean) => {
     modalState.resolve(result);
