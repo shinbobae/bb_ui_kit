@@ -2,6 +2,7 @@ import { recipe } from '@vanilla-extract/recipes';
 import {
   black0,
   black300,
+  black50,
   black500,
   black900,
   blue100,
@@ -24,7 +25,7 @@ const colorThemes: Record<TagColorType, { main: string; light: string }> = {
   red: { main: red500, light: red100 },
   yellow: { main: yellow500, light: yellow100 },
   black: { main: black900, light: black300 },
-  gray: { main: black500, light: blue100 },
+  gray: { main: black500, light: black50 },
 };
 
 const createColorVariants = (colorName: TagColorType) => {

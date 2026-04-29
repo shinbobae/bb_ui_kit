@@ -61,6 +61,12 @@ export const ColorVariants: Story = {
         <Badge {...args} variant="outline" color="yellow" />
         <Badge {...args} variant="ghost" color="yellow" />
       </Flex>
+      <Flex gap={16}>
+        <Badge {...args} color="gray" />
+        <Badge {...args} variant="light" color="gray" />
+        <Badge {...args} variant="outline" color="gray" />
+        <Badge {...args} variant="ghost" color="gray" />
+      </Flex>
     </Flex>
   ),
 };
@@ -77,6 +83,7 @@ export const Dot: Story = {
       <Badge {...args} color="red" />
       <Badge {...args} color="mandarin" />
       <Badge {...args} color="yellow" />
+      <Badge {...args} color="gray" />
     </Flex>
   ),
 };
