@@ -18,6 +18,13 @@ export const subTitleRecipe = recipe({
       5: { fontSize: '1rem', fontWeight: 400, lineHeight: 1.6 }, // Body Medium / h5
       6: { fontSize: '0.875rem', fontWeight: 400, lineHeight: 1.6 }, // Body Small / h6
     },
+    weight: {
+      400: { fontWeight: 400 },
+      500: { fontWeight: 500 },
+      600: { fontWeight: 600 },
+      700: { fontWeight: 700 },
+      800: { fontWeight: 800 },
+    },
     align: {
       left: { textAlign: 'left' },
       center: { textAlign: 'center', display: 'block', width: '100%' },

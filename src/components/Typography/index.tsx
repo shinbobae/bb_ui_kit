@@ -10,6 +10,7 @@ type TypographyProps<T extends ElementType> = {
   as?: T;
   level?: TypographyLevelType;
   color?: string;
+  weight?: 400 | 500 | 600 | 700 | 800; // weight 추가
   align?: 'left' | 'center' | 'right';
   children: ReactNode;
 } & React.ComponentPropsWithoutRef<T>;
@@ -23,6 +24,7 @@ const getDefaultTag = (level: TypographyLevelType): ElementType => {
 const Typography = <T extends ElementType>({
   as,
   level = 4, // 기본값 본문 레벨
+  weight,
   color = black900,
   align,
   children,
@@ -34,7 +36,7 @@ const Typography = <T extends ElementType>({
 
   return (
     <Component
-      className={subTitleRecipe({ level, align })}
+      className={subTitleRecipe({ level, weight, align })}
       style={{
         ...assignInlineVars({ [brandColorVar]: color }),
         ...style,
