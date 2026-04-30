@@ -27,7 +27,7 @@ export const Default: Story = {
           <Drawer.Header>
             <Flex justify="space-between" align="center" padding="16px 24px">
               <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>
-                프로필 설정
+                붸레레레ㅔ
               </h2>
               <button
                 onClick={() => setIsOpen(false)}
@@ -47,46 +47,66 @@ export const Default: Story = {
           <Drawer.Body>
             <Flex direction="column" gap={20} padding="24px">
               <section>
-                <h4 style={{ marginBottom: '8px' }}>내 계정</h4>
-                <Flex align="center" gap={12}>
-                  <div
-                    style={{
-                      width: '40px',
-                      height: '40px',
-                      borderRadius: '50%',
-                      backgroundColor: '#eee',
-                    }}
-                  />
-                  <div>
-                    <p style={{ fontWeight: '600' }}>Gemini Developer</p>
-                    <p style={{ fontSize: '12px', color: '#666' }}>
-                      developer@example.com
-                    </p>
-                  </div>
-                </Flex>
-              </section>
-
-              <Divider />
-
-              <section>
-                <h4 style={{ marginBottom: '12px' }}>흐리다</h4>
                 <Flex direction="column" gap={8}>
                   <Badge color="blue">아무거나</Badge>
                   <Badge color="green">써봐</Badge>
                 </Flex>
               </section>
-
+              <Divider />
               <section>
                 <h4 style={{ marginBottom: '12px' }}>쓸 말이 없긴 해</h4>
                 <div
                   style={{ color: '#888', fontSize: '14px', lineHeight: '1.6' }}
                 >
-                  {Array.from({ length: 25 }).map((_, i) => (
-                    <p key={i}>
-                      이 부분은 Drawer.Body 내부에서 스크롤되는 영역입니다.{' '}
-                      {i + 1}번째 줄입니다.
-                    </p>
-                  ))}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                  aliquam beatae consectetur cum cupiditate delectus enim eum
+                  illum ipsam itaque nesciunt nobis officia, possimus quasi quia
+                  <br />
                 </div>
               </section>
             </Flex>
