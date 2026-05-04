@@ -3,7 +3,7 @@ import Typography from './index';
 import Flex from '../Layout/Flex';
 
 const meta: Meta<typeof Typography> = {
-  title: 'Components/General/Typography',
+  title: 'Components/Server/Typography',
   component: Typography,
   tags: ['autodocs'],
   argTypes: {

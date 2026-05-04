@@ -3,7 +3,7 @@ import Divider from './index';
 import Flex from '../Flex'; // 아까 만든 Flex 활용!
 
 const meta: Meta<typeof Divider> = {
-  title: 'Components/Layout/Divider',
+  title: 'Components/Server/Divider',
   component: Divider,
   tags: ['autodocs'],
 };

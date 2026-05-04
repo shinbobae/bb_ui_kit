@@ -5,7 +5,7 @@ import Divider from '@/components/Layout/Divider';
 import Typography from '@/components/Typography';
 
 const meta: Meta<typeof Flex> = {
-  title: 'Components/Layout/Flex',
+  title: 'Components/Client/Flex',
   component: Flex,
   tags: ['autodocs'],
   argTypes: {

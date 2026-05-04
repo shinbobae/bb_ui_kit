@@ -4,7 +4,7 @@ import { Badge, Divider, Flex } from '@/index.ts';
 import { Drawer } from '@/components/Drawer/index.tsx';
 
 const meta: Meta<typeof Drawer> = {
-  title: 'Components/Feedback/Drawer',
+  title: 'Components/Client/Drawer',
   component: Drawer,
   tags: ['autodocs'],
   parameters: {

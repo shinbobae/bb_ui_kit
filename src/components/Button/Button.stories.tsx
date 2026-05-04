@@ -3,7 +3,7 @@ import Button from './index';
 import Flex from '../Layout/Flex';
 
 const meta: Meta<typeof Button> = {
-  title: 'Components/General/Button',
+  title: 'Components/Client/Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {

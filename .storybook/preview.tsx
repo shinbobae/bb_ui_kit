@@ -14,7 +14,11 @@ const preview: Preview = {
     options: {
       // Introduction 섹션을 가장 먼저 보여주도록 설정
       storySort: {
-        order: ['Intro', 'Components', '*'],
+        order: [
+          'Intro',
+          ['Components', ['Server', 'Client', ['Button', 'Flex', '*']]],
+          '*',
+        ],
       },
     },
   },

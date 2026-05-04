@@ -3,7 +3,7 @@ import Badge from './index';
 import Flex from '@/components/Layout/Flex';
 
 const meta: Meta<typeof Badge> = {
-  title: 'Components/Badge',
+  title: 'Components/Server/Badge',
   component: Badge,
   tags: ['autodocs'],
   argTypes: {

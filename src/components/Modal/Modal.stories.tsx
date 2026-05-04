@@ -9,7 +9,7 @@ import Badge from '@/components/Badge';
 import { modal } from '@/components/Modal/ModalProvider.tsx';
 
 const meta: Meta<typeof Alert> = {
-  title: 'Components/Modal',
+  title: 'Components/Client/Modal',
   component: Alert,
   tags: ['autodocs'],
   parameters: {
