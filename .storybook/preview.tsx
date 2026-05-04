@@ -16,7 +16,12 @@ const preview: Preview = {
       storySort: {
         order: [
           'Intro',
-          ['Components', ['Server', 'Client', ['Button', 'Flex', '*']]],
+          'Components',
+          [
+            'Server',
+            'Client',
+            ['Button', 'Flex', '*'], // Client 내부 순서
+          ],
           '*',
         ],
       },
