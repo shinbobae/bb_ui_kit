@@ -15,6 +15,7 @@ export type TagColorType =
 interface BaseBadgeProps {
   size?: TagSizeType;
   color?: TagColorType;
+  rounded?: boolean;
 }
 
 type BadgeProps = BaseBadgeProps &
@@ -31,12 +32,17 @@ type BadgeProps = BaseBadgeProps &
 
 const Badge = (props: BadgeProps) => {
   // 기본값 설정
-  const { variant = 'filled', size = 'sm', color = 'blue' } = props;
+  const {
+    variant = 'filled',
+    size = 'sm',
+    color = 'blue',
+    rounded = false,
+  } = props;
 
   if (variant === 'dot') {
     return (
       <span
-        className={badgeRecipe({ size, variant, color })}
+        className={badgeRecipe({ size, variant, color, rounded })}
         role="status"
         // props.children으로 접근하면 string임을 확신
         aria-label={props.children as string}
@@ -45,7 +51,7 @@ const Badge = (props: BadgeProps) => {
   }
 
   return (
-    <span className={badgeRecipe({ size, variant, color })}>
+    <span className={badgeRecipe({ size, variant, color, rounded })}>
       {props.children}
     </span>
   );

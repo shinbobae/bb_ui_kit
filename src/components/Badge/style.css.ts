@@ -65,7 +65,6 @@ export const badgeRecipe = recipe({
   base: {
     fontWeight: 400,
     lineHeight: '150%',
-    borderRadius: '4px',
     border: '1px solid transparent',
     boxSizing: 'border-box',
   },
@@ -100,6 +99,7 @@ export const badgeRecipe = recipe({
       white: {},
       gray: {},
     },
+    rounded: { true: { borderRadius: '20px' }, false: { borderRadius: '4px' } },
   },
   compoundVariants: (Object.keys(colorThemes) as TagColorType[]).flatMap(
     (colorName) => createColorVariants(colorName),
