@@ -46,12 +46,10 @@ export const Default: Story = {
 
           <Drawer.Body>
             <Flex direction="column" gap={20} padding="24px">
-              <section>
-                <Flex direction="column" gap={8}>
-                  <Badge color="blue">아무거나</Badge>
-                  <Badge color="green">써봐</Badge>
-                </Flex>
-              </section>
+              <Flex direction="column" gap={24} as="section">
+                <Badge color="blue">아무거나</Badge>
+                <Badge color="green">써봐</Badge>
+              </Flex>
               <Divider />
               <section>
                 <h4 style={{ marginBottom: '12px' }}>쓸 말이 없긴 해</h4>

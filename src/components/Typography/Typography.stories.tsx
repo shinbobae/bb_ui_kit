@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Typography from './index';
 import Flex from '../Layout/Flex';
+import { colors } from '@/tokens/colors.ts';
 
 const meta: Meta<typeof Typography> = {
   title: 'Components/Server/Typography',
@@ -86,8 +87,44 @@ export const Alignment: Story = {
 // 4. 컬러 커스텀 테스트
 export const Colored: Story = {
   args: {
-    level: 1,
-    color: '#0070f3',
-    children: 'Brand Blue Typography',
+    level: 3,
+    children: '동해물과 백두산이',
+  },
+  render: (args) => {
+    const depths = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
+    return (
+      <Flex fullWidth gap={16}>
+        <div className="flex-1">
+          {depths.map((depth) => (
+            <Typography {...args} color={colors.blue[depth]} key={depth} />
+          ))}
+        </div>
+        <div className="flex-1">
+          {depths.map((depth) => (
+            <Typography {...args} color={colors.green[depth]} key={depth} />
+          ))}
+        </div>
+        <div className="flex-1">
+          {depths.map((depth) => (
+            <Typography {...args} color={colors.red[depth]} key={depth} />
+          ))}
+        </div>
+        <div className="flex-1">
+          {depths.map((depth) => (
+            <Typography {...args} color={colors.mandarin[depth]} key={depth} />
+          ))}
+        </div>
+        <div className="flex-1">
+          {depths.map((depth) => (
+            <Typography {...args} color={colors.yellow[depth]} key={depth} />
+          ))}
+        </div>
+        <div className="flex-1">
+          {depths.map((depth) => (
+            <Typography {...args} color={colors.black[depth]} key={depth} />
+          ))}
+        </div>
+      </Flex>
+    );
   },
 };
