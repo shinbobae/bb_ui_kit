@@ -3,6 +3,9 @@ name: Publish to NPM
 on:
   release:
     types: [created] # GitHub에서 'Release'를 새로 만들 때만 실행
+# push:
+#   tags:
+#   - 'v*' # v1.0.0 같은 태그가 push될 때 실행
 
 jobs:
   publish:
