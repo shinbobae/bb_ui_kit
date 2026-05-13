@@ -95,6 +95,7 @@ export const Etc: Story = {
     <Flex gap={12}>
       <Button disabled>퇴근</Button>
       <Button leftIcon="🚀">슝</Button>
+      <Button rightIcon="🚀">슝</Button>
     </Flex>
   ),
 };
