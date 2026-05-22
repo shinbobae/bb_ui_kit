@@ -92,10 +92,13 @@ export const Sizes: Story = {
 
 export const Etc: Story = {
   render: () => (
-    <Flex gap={12}>
+    <Flex gap={12} wrap="wrap">
       <Button disabled>퇴근</Button>
       <Button leftIcon="🚀">슝</Button>
       <Button rightIcon="🚀">슝</Button>
+      <Flex fullWidth>
+        <Button fullWidth>슝</Button>
+      </Flex>
     </Flex>
   ),
 };

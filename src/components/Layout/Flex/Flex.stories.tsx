@@ -3,6 +3,7 @@ import Flex from './index.tsx';
 import Badge from '@/components/Badge';
 import Divider from '@/components/Layout/Divider';
 import Typography from '@/components/Typography';
+import { useEffect, useRef, useState } from 'react';
 
 const meta: Meta<typeof Flex> = {
   title: 'Components/Client/Flex',
@@ -91,8 +92,8 @@ export const Center: Story = {
 
 // 4. 시맨틱 태그 활용 (Polymorphic)
 export const ListExample: Story = {
-  render: (args) => (
-    <Flex {...args}>
+  render: () => (
+    <Flex direction="column" gap={12}>
       <Flex as="li" fullWidth justify="space-between">
         <Flex gap={8}>
           <Badge variant="light" color="red">
@@ -117,21 +118,32 @@ export const ListExample: Story = {
         <Typography level={6}>2026.04.17</Typography>
       </Flex>
       <Divider />
-      <Flex as="li" fullWidth justify="space-between">
-        <Flex gap={8}>
-          <Badge variant="light" color="gray">
-            꼬마버스 타요
-          </Badge>
-          <Typography level={5}>타요타요 타요타요 개구쟁이 꼬마버스</Typography>
-        </Flex>
-        <Typography level={6}>2026.04.17</Typography>
-      </Flex>
-      <Divider />
     </Flex>
   ),
   args: {
     as: 'ul',
     direction: 'column',
     gap: 12,
+  },
+};
+
+export const RefExample: Story = {
+  render: () => {
+    const ref = useRef<HTMLDivElement>(null);
+    const [size, setSize] = useState({ width: 0, height: 0 });
+    useEffect(() => {
+      if (ref.current) {
+        setSize({
+          width: ref.current.offsetWidth,
+          height: ref.current.offsetHeight,
+        });
+      }
+    }, []);
+
+    return (
+      <Flex ref={ref} padding="8rem" style={{ border: '2px solid red' }}>
+        너비/높이: {size.width}/{size.height}
+      </Flex>
+    );
   },
 };

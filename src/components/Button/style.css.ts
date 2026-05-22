@@ -73,7 +73,7 @@ export const buttonRecipe = recipe({
     ':disabled': { cursor: 'not-allowed', opacity: 0.5 },
   },
   variants: {
-    // 1. 색상 기본값 정의 (배경/글자색)
+    // 색상 기본값 정의 (배경/글자색)
     color: {
       primary: {},
       danger: {},
@@ -92,7 +92,7 @@ export const buttonRecipe = recipe({
     },
     fullWidth: { true: { width: '100%' } },
   },
-  // 💡 Compound Variants
+  // Compound Variants
   compoundVariants: [
     // primary blue
     {
